@@ -16,15 +16,15 @@ For example, say the given pool of interest list is [music, reading, gardening, 
 * Now each person has a corresponding interest_Boolean array based on what particular interest he/she has chosen and not, and also each person has an age attribute. For example interest list of Ashish is [1,0,1,1,0,0,0,1]
 
 * Now using these attributes, we can filter the mutual connection according to the formula:
-#### Score = abs(Preson1_Interest0 - Person2_Interest0) + abs(Preson1_Interest1 -  Person2_Interest1) + ... + abs(Preson1_InterestK - Person2_InterestK) + abs(Preson1_Age - Person2_Age)
+    #### Score = abs(Preson1_Interest0 - Person2_Interest0) + abs(Preson1_Interest1 -  Person2_Interest1) + ... + abs(Preson1_InterestK - Person2_InterestK) + abs(Preson1_Age - Person2_Age)
 
-where:
+    where:
 
-•	Personm_Interestn signifies a 1 (or) 0 indicating whether the particular Intereset n is choosen by Person m. 
+    •	Personm_Interestn signifies a 1 (or) 0 indicating whether the particular Intereset n is choosen by Person m. 
 
-•	Personm_Age signifies the age of Personm. 
+    •	Personm_Age signifies the age of Personm. 
 
-(For all m = {1,2} and 0 <= n <= K)
+    (For all m = {1,2} and 0 <= n <= K)
 
 
 ### Justification of the above filtering/sorting algorithm used for calculating *score*:
